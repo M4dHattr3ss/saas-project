@@ -6,7 +6,7 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="./CSS/default.css">
     <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="./CSS/">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,45 +18,39 @@
 </head>
 <body>
     <header>
-    <div id="pageTop"></div>
+    <div id="pageTop">
         <div class="head-bg">
-            <div class="bg-grey">
-            <div class="bg-blue-grey">
-            <div class="nav">
-                <img src="./saas-project-assets/project_logo/logo.svg" alt="Front Logo">
-                   <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
-                       <span>&#9776;</span>
-                   </button>  
-                   <div class="nav-links">
-                       <ul>
-                           <li>
-                               <a href="#" class="nav-link">Home</a>
-                           </li>
-                           <li>
-                               <a href="#" class="nav-link blue">Features</a>
-                           </li>
-                           <li>
-                               <a href="#" class="nav-link">Learn</a>
-                           </li>
-                           <li>
-                               <a href="#" class="nav-link">Pricing</a>
-                           </li>
-                           <li>
-                               <a href="#" class="nav-link">Hire Us</a>
-                           </li>
-                       </ul>
-                   </div>
-                   <span class="btn">Buy Now</span>
-               </div>
-           </div>
-                   </div>
-                </div><!-- end nav -->
-                </div><!-- end blue bg -->
-            </div><!-- end grey bg -->
-           </div><!-- end bg -->
-
+            <div class="bg-grey"></div><!-- end grey bg -->
+            <div class="bg-blue-grey"></div><!-- end blue bg -->
+       </div><!-- end bg -->
+    </div>
+       <div class="nav">
+            <img src="./saas-project-assets/project_logo/logo.svg" alt="Front Logo">
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+                <span>&#9776;</span>
+            </button>  
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link blue">Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Learn</a>
+                    </li>
+                    <li>
+                       <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Hire Us</a>
+                    </li>
+                </ul>
+                <span id="navBtn"class="btn">Buy Now</span>
+            </div>
+        </div><!-- end nav -->
     </header>
-    
     <!-- section one -->
     <div class="empower">
         <div class="empower-text">
@@ -68,13 +62,13 @@
             </div>
         </div>
         <div class="empower-logos">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/google.png" alt="Google Logo" id="google-logo">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/atlassian.png" alt="Atlassian" id="atlassian">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/asana.png" alt="Asana" id="asana">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/paypal.jpg" alt="PayPal" id="paypal">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/weave.png" alt="Weave" id="weave">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/google-A.png" alt="Google A" id="google-a">
-            <img class= "em-logo"src="./saas-project-assets/logo_icons/calendar.png" alt="Google Calendar" id="google-cal">
+            <nav class=" em-logo logo-bg" id="google-logo"><img src="./saas-project-assets/logo_icons/google.png" alt="Google Logo"></nav>
+            <nav class=" em-logo logo-bg" id="atlassian"><img src="./saas-project-assets/logo_icons/atlassian.png" alt="Atlassian"></nav>
+            <nav class=" em-logo logo-bg" id="asana"><img src="./saas-project-assets/logo_icons/asana.png" alt="Asana"></nav>
+            <nav class=" em-logo logo-bg" id="paypal"><img src="./saas-project-assets/logo_icons/paypal.jpg" alt="PayPal"></nav>
+            <nav class=" em-logo logo-bg" id="weave"><img src="./saas-project-assets/logo_icons/weave.png" alt="Weave"></nav>
+            <nav class=" em-logo logo-bg" id="google-a"><img src="./saas-project-assets/logo_icons/google-A.png" alt="Google A"></nav>
+            <nav class=" em-logo logo-bg" id="google-cal"><img src="./saas-project-assets/logo_icons/calendar.png" alt="Google Calendar"></nav>
         </div>
     </div>
     <div class="container">
@@ -114,16 +108,305 @@
             </div>
         </div>
     </div>
+    <!-- Software for People section -->
     <div class="container">
         <div class="video-box">
             <div class="video-text">
                 <h2>Front makes you look at things from a different prospectives</h2>
                 <span class="btn play-btn"><i class="fa-solid fa-circle-play"></i>Play Video</span>
             </div>
-            <img src="./saas-project-assets/banners/banner_one.jpg" alt="">
+            <div class="video-image">
+                <img src="./saas-project-assets/banners/banner_one.jpg" alt="">
+            </div>
+            
         </div>
     </div>
-    <div class="container"></div>
-    <br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="why-front">
+            <h2>Why front?</h2>
+        <p>Front is an incredibly beautiful, fully responsive, and mobile-first projects on
+            <br>the web - it is the starting point for creative sites
+        </p>
+        <div class="chart">
+            <div class="circle-box">
+                <div class="cir-line">
+                    <div class="line white"></div>
+                    <div class="circle">
+                        <div class="blue-dot"></div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <h3>Basic Elements</h3>
+            </div>
+            <div class="circle-box">
+                <div class="cir-line">
+                    <div class="line"></div>
+                    <div class="circle">
+                        <div class="blue-dot"></div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <h3>Components</h3>
+            </div> 
+            <div class="circle-box">
+                <div class="cir-line">
+                    <div class="line"></div>
+                    <div class="circle">
+                        <div class="blue-dot"></div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <h3>Combined components</h3>
+            </div> 
+            <div class="circle-box">
+                <div class="cir-line">
+                    <div class="line"></div>
+                    <div class="circle">
+                        <div class="blue-dot"></div>
+                    </div>
+                    <div class="line white"></div>
+                </div>
+                <h3>Pay layouts</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- video container section -->
+    <div class="container">
+        <div class="video-banner">
+            <img src="./saas-project-assets/banners/banner_two.jpg" alt="">
+            <div class="play">
+                <i class="fa-solid fa-play"></i>
+            </div>
+        </div>
+    </div>
+    <!-- hubspot section -->
+    <div class="container">
+        <div class="hub-box">
+            <div class="hub-girl">
+                <img  class= "hub-pics" id="hubWoman" src="./saas-project-assets/people/woman_three.jpg" alt="Picture of woman"> 
+                <img class="hub-pics" id="hubDots"src="./saas-project-assets/abstract/dots.svg" alt="dots background">
+            </div>
+            <div class="hubspot">
+                <img src="./saas-project-assets/company_logos/hubspot.svg" alt="hubspot logo">
+                <p>The template is really nice and offers quite a large set of options. It's beautiful and the coding is done quickly and seamlessly. Thank you!</p>
+                <h3>Christina Kray</h3>
+                <span>Executive Director</span>
+            </div>
+        </div>
+    </div>
+    <!-- worlds best section -->
+    <div class="container">
+        <div class="worlds-best">
+        <h1>TRUSTED BY THE WORLD'S BEST</h1>
+        <div class="world-logos">
+            <div class="world-logo"><img src="./saas-project-assets/company_logos/weebly.svg" alt="weebly logo"></div>
+            <div class="world-logo"><img src="./saas-project-assets/company_logos/uber.svg" alt="uber logo"></div>
+            <div class="world-logo"><img src="./saas-project-assets/company_logos/slack.svg" alt="slack logo"></div>
+            <div class="world-logo"><img src="./saas-project-assets/company_logos/airbnb.svg" alt="airbnb logo"></div>
+            <div class="world-logo"><img src="./saas-project-assets/company_logos/spotify.svg" alt="spotify logo"></div>
+        </div>
+        </div>
+    </div>  
+    <!-- pricing section -->
+    <div class="container">
+        <div class="pricing">
+            <div class="pricing-text">
+                <h2>Pricing</h2>
+                <span>No additional costs. Pay for what you use</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-price">
+                        <span class="lg-price">59</span>
+                        <span> / mo</span>
+                    </div>
+                    <hr>
+                    <p>Start your Front business now. 100% guaranteed
+                        money back. No questions asked.
+                    </p>
+                    <div id="pricing-btn">
+                        <div  class="btn play-btn"><i class="fa-solid fa-circle-play"></i>Play Video</div>
+                        <h6>No credit card required.</h6>
+                    </div>
+                </div>
+                    <div class="feature">
+                        <img src="./saas-project-assets/icons/components.svg" alt="puzzle components">
+                        <h3>Hundreds of components</h3>
+                        <p>Achieve maximum productivity <br>with minimum effort with Front <br>and create
+                            robust Limitless <br>products.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="./saas-project-assets/icons/images.svg" alt="Diamond image">
+                        <h3>Images included</h3>
+                        <p>Images included We made <br>custom license for all our <br>premium images in the front</p>
+                    </div>
+                    <div class="feature">
+                        <img class="cancel-img" src="./saas-project-assets/icons/cancel.svg" alt="Cancel tag">
+                        <br>
+                        <span class="cancel-title">Cancel anytime</span>
+                        <span class="btn green-btn">sketch</span>
+                        <p class="cancel-p">If its not for you, just cancel, no <br>hidden costs or fees</p>
+                    </div>
+                    <div class="feature">
+                        <img src="./saas-project-assets/icons/moneyback.svg" alt="Money in Hand">
+                        <h3>Money Back</h3>
+                        <p>100% guaranteed money back. No questions asked.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- hire us section -->
+        <div class="hire-us">
+            <div class="hire-left">
+                <div class="hire-text">
+                    <h1>Hire Us</h1>
+                    <p class="hire-grey">Whatever your goal - we will get you there</p>
+                    <hr>
+                    <p class="review"><i>"I love front! I love the ease of use, I love the fact that I have total creative freedom..."</i></p>
+                </div>
+                <div class="hire-name">
+                    <h2>Charlotte Moore</h2>
+                    <span class="hire-grey">Head of Commercials, Slack</span>
+                    <div class="heads">
+                        <img src="./saas-project-assets/people/woman_two.jpg" alt="Woman">
+                        <img src="./saas-project-assets/people/woman_one.jpg" alt="Woman">
+                        <img id="heads-lg" src="./saas-project-assets/people/man_one.jpg" alt="Man">
+                    </div>
+                </div>
+            </div>
+            <div class="hire-form">
+                <h4>Fill out the form and we'll be in touch as soon as possible</h4>
+                <div class="input-grid">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <select name="budget" id="budget">
+                        <option value="100">$100.00</option>
+                        <option value="200">$200.00</option>
+                        <option value="300">$300.00</option>
+                        <option value="Budget" selected hidden>Budget</option>
+                    </select>
+                    <select name="country" id="country">
+                        <option value="United States">United States</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Country" selected hidden>Country</option>
+                    </select>
+                    <textarea 
+                        name="more" 
+                        id="more" 
+                        cols="30" 
+                        rows="10">
+                        Tell us more about your project, needs, and timeline, please...
+                    </textarea>  
+                </div>
+                <div class="form-bottom">
+                    <label class="form-checkbox">
+                            Yes, I'd like to receive occasional marketing 
+                            emails from Front. I have the right to opt out at 
+                            any time.
+                        <input type="checkbox" checked ="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <a href="#" class="grey">View privacy policy</a>
+                    <a href="#" class="blue">View privacy policy</a><br>
+                    <div class="form-btn">
+                        <div class="btn play-btn">Get Started</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="contact">
+                <img src="./saas-project-assets/project_logo/logo.svg" alt="Front logo">
+                <br><i class="fa-solid fa-location-arrow"></i>
+                <span>153 Williamson Plaza, Maggieberg</span>
+                <br><i class="fa-solid fa-phone"></i>
+                <span class="blue">+1 (062) 109-9222</span>
+            </div>
+            <div class="foot-grid">
+                <div class="foot-features company">
+                    <h1>Company</h1>
+                    <span><a href="#">About</a></span>
+                    <span><a href="#">Career</a> <p class="btn play-btn">We're Hiring</p></span>
+                    <span><a href="#">Blog</a></span>
+                    <span><a href="#">Customers</a></span>
+                    <span><a href="#">Hire us</a></span>
+                </div>
+                <div class="foot-features features-foot">
+                    <h1>Features</h1>
+                    <span><a href="#">Press</a></span>
+                    <span ><a href="#" id="release-blue">Release notes</a></span>
+                    <span><a href="#">Integrations</a></span>
+                    <span><a href="#">Pricing</a></span>
+                </div>
+                <div class="foot-features documentation">
+                    <h1>Documentation</h1>
+                    <span><a href="#">Support</a></span>
+                    <span><a href="#">Docs</a></span>
+                    <span><a href="#">Status</a></span>
+                    <span><a href="#">API Reference</a></span>
+                    <span><a href="#">Tech Requirements</a></span>
+                </div>
+                <div class="foot-features resources">
+                    <h1>Resources</h1>
+                    <span><i class="fa-solid fa-circle-info"></i><a href="#">Help</a></span>
+                    <span><i class="fa-solid fa-circle-user"></i><a href="#">Your Account</a></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="socials">
+                <div class="sitemap">
+                    <span>Privacy & Policy </span>&#62;
+                    <span class="blue"> Terms </span>&#62;
+                    <span> Site Map </span>
+                </div>
+                <div class="social-links">
+                    <div class="social-links-bg"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="social-links-bg"><i class="fa-brands fa-google"></i></div>
+                    <div class="social-links-bg"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="social-links-bg"><i class="fa-brands fa-github"></i></div>
+                    <select name="bottom_country" id="bottom_country">
+                        <option value="USA" selected>United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-text">
+                <span>&copy; Front. 2022 Responsive designs. All rights reserved.</span>
+                <p>When you visit or interact with our sites, services, or tools,
+                    we or our authorized service providers may use cookies for storing
+                    information to help provide you with a better, faster, and safer
+                    experience and for marketing purposes.
+                </p>
+            </div>
+        </div>
+        <script>
+            const nav = document.getElementById("topNav");
+            window.onscroll = function () {
+                if (window.pageYOffset > 100){
+                    nav.classList.add("sticky");
+                }else{
+                    nav.classList.remove("sticky");
+                    }
+                }
+    
+    
+            const navButton = document.querySelector('button[aria-expanded]');
+    
+            function toggleNav({ target }){
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                navButton.setAttribute('aria-expanded', !expanded);
+            }
+    
+            navButton.addEventListener('click', toggleNav);
+        </script>
 </body>
 </html>

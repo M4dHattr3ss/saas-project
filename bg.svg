@@ -1,0 +1,8 @@
+<svg width="250" height="500">
+
+    <polygon points = "0,0 100,0 100,50 0,65" style = "fill:#e6e6e6"/>
+    
+
+    <!-- -webkit-clip-path: polygon(66% 0, 100% 0, 100% 50%, 52% 57%);
+    clip-path: polygon(66% 0, 100% 0, 100% 50%, 52% 57%); -->
+</svg>

@@ -1,0 +1,485 @@
+
+/* IPads and Tablets -- portrait */
+@media screen and (max-width:768px){
+    [aria-controls="navbarDropdown"]{
+        display: block;
+    }
+    [aria-expanded = "true"] ~ .nav-links{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: var(--size-50);
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            padding-bottom: 40px;
+            align-items: center;
+    }
+
+    [aria-expanded = "false"] ~ .nav-links ul, .nav-links span{display: none;}
+
+    [aria-expanded = "true"] ~ .nav-links ul{
+        display: flex;
+        top: var(--size-50);      
+        text-align: center;
+        width: 90%;
+        z-index: 10;
+        gap: var(--size-30);
+        justify-content: center;
+    }
+    [aria-expanded="true"] ~ .nav-links #navBtn{
+        display: block;
+        width: max-content;   
+    }
+
+    [aria-expanded="true"] ~ .nav-links ul li a{font-size: 25px;}
+
+    [aria-expanded ="true"]~ .nav-links li{
+        padding-top: var(--size-50);
+        margin: 0;
+    }
+
+    .container, 
+    .key-benefits, 
+    .pricing, 
+    footer, 
+    .footer-top, 
+    .footer-bottom{max-width: 740px;}
+
+    .nav img{
+        max-width: 10rem;
+    }
+    .nav{
+        position: relative;
+        max-width: 45rem;
+        margin: var(--size-20);
+    }
+    .empower{
+        flex-direction: column;
+        gap: var(--size-50);
+        height: 40.625rem;
+    }
+    .empower-text, .empower-logos{
+        display: block;
+        flex: 1;
+    }
+    .empower-logos{
+        margin: var(--size-20) var(--size-50);
+    }
+    .empower-text{
+        text-align: center;
+    }
+    .empower-text h2{
+        font-size: var(--size-50);
+        margin: 0 auto;
+    }
+
+    .empower-text p,
+    .pricing-card p, 
+    .foot-features a,
+    .contact span{ 
+        font-size: var(--size-18);
+    }
+    .em-logo{
+        max-width: var(--size-50);
+    }
+    #google-logo{
+        position: absolute;
+        max-width: 3.375rem;
+        left: 13%;
+        padding: 0;
+    }
+    #atlassian{
+        position: absolute;
+        max-width: 3.75rem;
+        padding: 0;
+        right: 38%;
+    }
+    #asana{
+        position: absolute;
+        padding: 0;
+        max-width: 3.75rem;
+        right: 5%;
+    }
+    #paypal{
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        max-width: 4.375rem;
+        padding: 1px;
+    }
+    #weave{
+        position: absolute;
+        max-width: 3.75rem;
+        padding: 0;
+        right: 25%;
+        top: 45%;
+    }
+    #google-a{
+        position: absolute;
+        max-width: 3.75rem;
+        padding: 0;
+        bottom: 5%;
+        right: 49%;
+    }
+    #google-cal{
+        position: absolute;
+        max-width: 4.375rem;
+        padding: 0;
+        top: 85%;
+        right: 6%;
+    }
+
+    .key-benefits{margin-top: var(--size-100);}
+
+    .key-cards, .pricing-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .key-cards{
+        gap: var(--size-30);
+        margin: var(--size-20) 0 var(--size-100);
+    }
+    .card, .circle-box h3{
+        font-size: var(--size-16);
+    }
+    .card h3{
+        font-size: var(--size-20);
+    }
+    .video-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-text,.video-image img{
+        margin-top: var(--size-30);
+    }
+    .video-text h2{
+        font-size: var(--size-30);
+        margin-top: 0;
+    }
+    .chart{
+        max-width: 45rem;
+        margin: var(--size-50) 0;
+    }
+    .circle{
+        width: var(--size-50);
+        height: var(--size-50);
+    }
+
+    .line{max-width: 3.75rem;}
+
+    .hub-box{flex-direction: column; }
+
+    .hubspot, .card-price, #pricing-btn{
+        text-align: center;
+    }
+
+    .worlds-logos{
+        max-width: 100%;
+        gap: var(--size-20);
+    }
+    .card-price .lg-price{
+        font-size: 3.75rem;
+    }
+    .pricing-card{
+        grid-column: 1/3;
+    }
+    .pricing-card .play-btn{
+        margin: 0;
+    }
+    .hire-us{
+        flex-direction: column;
+        gap: var(--size-20);
+    }
+    .hire-left{
+        display: flex;
+        padding: var(--size-10);
+        gap: var(--size-20);
+    }
+    .hire-text{
+        flex: 1;
+        font-size: var(--size-18);
+    }
+    .hire-text h1{
+        font-size: var(--size-30);
+    }
+    .hire-name h2{
+        margin:0;
+        padding-top: var(--size-30);
+    }
+    .heads{
+        margin: var(--size-50) 0 0;
+    }
+    .footer-top{
+        display: flex;
+        gap: var(--size-50);
+        margin: var(--size-10);
+    }
+    .foot-grid{
+        display: grid;
+        flex: 1;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows:1fr 1fr;
+        gap: var(--size-30);
+    }
+    .foot-features h1{
+        font-size: var(--size-20);
+        font-weight: 700;
+    } 
+    .contact i{
+        font-size: var(--size-16);
+        margin-right: 0.125rem;
+    }
+
+}
+/* Mobile Screen --Portrait */
+@media  screen and (max-width: 375px) {
+    .container, .key-benefits, .pricing, footer, .footer-top, .footer-bottom{
+        max-width: 375px;
+        font-size: var(--size-18);
+        line-height: 1.3;
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    [aria-expanded = "true"] ~ .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        top: var(--size-50);      
+        text-align: center;
+        width: 90%;
+        z-index: 10;
+        gap: var(--size-30);
+        justify-content: center;
+    }
+    .nav{
+        position: relative;
+        margin: var(--size-5), var(--size-20);
+        z-index: 15;
+    }
+    .empower{
+        gap: var(--size-10);
+        max-height: 37.5rem;
+        margin-bottom: var(--size-100);
+    }
+    .empower-text, 
+    .empower-logos, 
+    .video-banner{
+        margin: 0;
+    }
+    .empower-text h2{
+        font-size: var(--size-25);
+        margin: var(--size-10) 0;
+    }
+
+    .empower-text p{line-height: 1;}
+    .key-text{margin-bottom: var(--size-50);}
+
+    .key-text h1 {
+        font-size: var(--size-30);
+        margin-bottom: var(--size-5);
+    }
+    .key-cards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--size-50);
+    }
+    .why-front{
+        margin-top: var(--size-50);
+    }
+    .why-front p{
+        max-width: 21.25rem;
+    }
+    .chart{
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-20);
+        margin: var(--size-50) var(--size-40);
+    }
+    .circle-box{
+        display: flex;
+        flex-direction: row;
+        gap: var(--size-20);
+    }
+    .circle-box h3{
+        font-weight: bold;
+    }
+    .line{
+        display: none;
+    }
+    .play i{
+        top: 35%;
+        left: 45%;
+    }
+
+    .hub-box{flex-direction: column;}
+    
+    .hub-girl{
+        max-width: 23.125rem;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+    #hubWoman{
+        max-width: 16.875rem;
+        margin-left: var(--size-50);
+    }
+    #hubDots{
+        max-width: var(--size-150);
+        margin-left:0;
+        margin-top: 5.625rem;
+        padding-left: var(--size-20);
+    }
+    
+    .hubspot{padding: var(--size-5);}
+
+    .hubspot img{margin: var(--size-30) 0;}
+    .hubspot p{
+        font-size: var(--size-20);
+        padding: 0 25px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .worlds-best,
+    .pricing-text{ margin: var(--size-50) 0;}
+
+    .worlds-best h1, 
+    .hire-form h4{font-size: var(--size-20);}
+
+    .world-logos{
+        flex-direction: column;
+        gap: var(--size-20);
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .world-logo{max-width: var(--size-100);}
+
+    .pricing-text h2{
+        font-size: var(--size-30);
+        font-weight:  bold;
+    }
+
+    .pricing-card{padding: var(--size-25);}
+
+    .pricing-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .hire-us{
+        padding: var(--size-5);
+        margin-bottom: var(--size-50);
+    }
+    .hire-left{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hire-left p{max-width: 100%;}
+    
+    .hire-grey{font-size: var(--size-16);}
+
+    .heads{
+        justify-content: center;
+        margin-bottom: var(--size-50);
+    }
+    .hire-form{
+        padding: var(--size-20);
+        margin-bottom: var(--size-30);
+    }
+
+    .input-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-grid input, 
+    .input-grid select,
+    .input-grid textarea{
+        font-size: var(--size-18);
+        max-width: 300px;
+        border-radius: 8px;
+    }
+    .form-checkbox, 
+    .form-checkbox a{
+        font-size: var(--size-15);
+    }
+    .checkmark{
+        max-width: var(--size-20);
+        max-height: var(--size-20);
+    }
+    
+    .form-checkbox{padding-left: var(--size-30);}
+
+    .form-checkbox .checkmark:after{
+        left: 0.438rem;
+        top: 0.188rem;
+    }
+    .form-bottom a{
+        color: var(--font-color-base);
+        margin-left: var(--size-30);
+        font-size: var(--size-18);
+    }
+    .form-bottom > a:nth-child(2){
+        display: none;
+    }
+    footer{
+        margin: var(--size-10);
+    }
+    .footer-top{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact, 
+    .footer-bottom{text-align: center;}
+
+    .contact i{margin: var(--size-10) 0px;}
+    .contact img {margin: var(--size-20) var(--size-100);}
+
+    .foot-grid{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .foot-features{gap: var(--size-20);}
+
+    .socials{
+        flex-direction: column;
+        gap: var(--size-20);
+        margin: 0;
+    }
+    
+    .sitemap{font-size: var(--size-18);}
+
+    .social-links{
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        max-width: 18.75rem;
+        margin: 0 auto;
+        row-gap: var(--size-30);
+        column-gap: 0px;
+    }
+    .social-links select{
+        grid-column: 1 / 5;
+        height: var(--size-30);
+        width: 11.25rem;
+        font-size: var(--size-20);
+        text-align: center;
+    }
+    .social-links-bg{
+        background-color: var(--font-color-base);
+        width: var(--size-30);
+        height: var(--size-30);
+    }
+    .footer-text{
+        margin: var(--size-50) var(--size-5);
+        font-size: var(--size-16);
+    }
+}

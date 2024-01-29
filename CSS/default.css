@@ -3,16 +3,22 @@
     --white: #FFF;
     --black: #000;
     --font-blue: #038cfc;
+    --bg-blue: #d1dde8;
+    --bg-grey: #e6e6e6;
+    --video-bg: #e9edf2;
     --font-color-base: #666;
     --font-color-dark: #212529;
-    --footer: #1e2f5e;
+    --footer: #1b274d;
+    --green-btn: #39bf8e;
 
+    --size-1: 0.063rem;
+    --size-5: 0.313rem;
+    --size-8: 0.5rem;
     --size-10: 0.625rem;
-    --size-14: 0.875rem;
     --size-15: 0.9375rem;
-    --size-16: 1rem;
     --size-18: 1.125rem;
     --size-20: 1.25rem;
+    --size-25: 1.563rem;
     --size-30: 1.875rem;
     --size-40: 2.5rem;
     --size-50: 3.125rem;
@@ -22,10 +28,11 @@
 
 html{scroll-behavior: smooth;}
 
-body{
+body, footer{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: var(--size-20);
+    max-width: 100%;
     line-height: 1.6;
     letter-spacing: 0;
     color: var(--font-color-base);
@@ -63,8 +70,9 @@ img{
 
 .container{
     width: 100%;
-    padding-left: var(--size-15);
-    padding-right: var(--size-15);
+    max-width: 100%;
+    padding-left: var(--size-20);
+    padding-right: var(--size-20);
     margin-left: auto;
     margin-right: auto;
 }
@@ -82,21 +90,5 @@ img{
     border-radius: var(--size-30);
     transition: ease-in-out 0.3s;    
 }
-.btn-primary{
-    padding: 0.4375rem 1.5625rem;
-}
 
 
-/* @media (min-width: 768px){
-    .pricing-table,
-    .footer-bottom-wrapper,
-    .testimonial-grid{max-width: 720px; }
-}
-
-@media (min-width: 1200px){
-    .container{max-width: 1140; }
-}
-
-@media (min-width: 992){
-    footer .container{max-width: 960;}
-} */
